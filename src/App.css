@@ -6,6 +6,7 @@
   --light-color: #f4f4f4;
   --light-gray-color: #bdc3c7;
   --dark-gray-color: #2c3e50;
+  --pastel-blue: #829cad;
 }
 
 * {
@@ -397,7 +398,7 @@ footer {
   margin-top: 10px;
   padding-top: 5px;
   text-align: center;
-  /* position: fixed; */
+  position: fixed;
   left: 0;
   right: 0;
   bottom: 0;
@@ -424,6 +425,15 @@ footer p {
   width: 300px;
 }
 
+.big-logo {
+  height: 300px;
+  width: 450px;
+}
+
 /* p {
   line-height: 1.5rem;
 } */
+
+.color-pastel {
+  color: var(--pastel-blue);
+}

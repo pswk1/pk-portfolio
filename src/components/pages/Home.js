@@ -1,11 +1,14 @@
 import React, { Fragment } from 'react';
+import { Link } from 'react-router-dom';
+import PK_WD from '../../assets/imgs/PK_WD.png';
 
 const Home = () => {
   return (
     <Fragment>
       <div className='all-center'>
-        <h1>Welcome To My Portfolio!</h1>
-        <h2 className='my-top-3'> I'm Peter and I'm a software developer.</h2>
+        <Link to='/about'>
+          <img src={PK_WD} alt='big logo' className='big-logo' />
+        </Link>
       </div>
     </Fragment>
   );
