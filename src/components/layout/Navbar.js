@@ -1,13 +1,12 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 
 const Navbar = ({ title }) => {
   return (
-    <nav className='navbar bg-brown'>
+    <nav className='navbar .bg-light-gray'>
       <h1>
         <Link to='/'>
-          <span style={{ paddingLeft: '.5em' }}>{title}</span>
+          <img src={require('../../assets/imgs/PK.png')} alt='logo'></img>
         </Link>
       </h1>
       <ul>
@@ -17,14 +16,6 @@ const Navbar = ({ title }) => {
       </ul>
     </nav>
   );
-};
-
-Navbar.defaultProps = {
-  title: `Peter Kang`,
-};
-
-Navbar.propTypes = {
-  title: PropTypes.string.isRequired,
 };
 
 export default Navbar;

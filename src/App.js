@@ -4,6 +4,7 @@ import Home from './components/pages/Home';
 import About from './components/pages/About';
 import Projects from './components/projects/Projects';
 import Contact from './components/pages/Contact';
+import Footer from './components/layout/Footer';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
 import './App.css';
@@ -21,6 +22,7 @@ function App() {
             <Route exact path='/contact' component={Contact} />
           </Switch>
         </div>
+        <Footer />
       </div>
     </Router>
   );
