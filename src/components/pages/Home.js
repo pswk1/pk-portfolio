@@ -5,7 +5,7 @@ const Home = () => {
     <Fragment>
       <div className='all-center'>
         <h1>Welcome To My Portfolio!</h1>
-        <h2>I'm Peter and I'm a software developer.</h2>
+        <h2 className='my-top-3'> I'm Peter and I'm a software developer.</h2>
       </div>
     </Fragment>
   );
