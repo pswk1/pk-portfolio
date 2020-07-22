@@ -389,14 +389,14 @@ footer p {
   height: 15rem;
   width: 23rem;
 
-  animation-name: moveInBottom;
+  animation-name: moveInTop;
   animation-duration: 1s;
   animation-timing-function: ease-out;
 }
 
 /* Animations */
 
-@keyframes moveInBottom {
+@keyframes moveInTop {
   /* beginning of the animation */
   0% {
     opacity: 0;

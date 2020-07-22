@@ -1,4 +1,5 @@
 import React from 'react';
+import Resume from '../../assets/resume/PeterKang_PortResume.pdf';
 
 const Contact = () => {
   return (
@@ -36,6 +37,15 @@ const Contact = () => {
           rel='noopener noreferrer'
         >
           LinkedIn
+        </a>
+
+        <a
+          className='btn'
+          href={Resume}
+          target='_blank'
+          rel='noopener noreferrer'
+        >
+          Resume
         </a>
       </div>
     </div>
