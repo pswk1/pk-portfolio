@@ -27,7 +27,7 @@ const Footer = () => {
         </a>{' '}
       </div>
       <p>
-        Peter Kang | Software Developer | <span id='year'>{setYear()}</span>
+        Peter Kang | Web Developer | <span id='year'>{setYear()}</span>
       </p>
     </footer>
   );

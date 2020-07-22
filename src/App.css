@@ -7,6 +7,7 @@
   --light-gray-color: #bdc3c7;
   --dark-gray-color: #2c3e50;
   --pastel-blue: #829cad;
+  --color-tertiary: #c4bdc7;
 }
 
 * {
@@ -22,15 +23,18 @@ body {
   line-height: 1.6;
   background-color: var(--light-gray-color);
   color: white;
+  margin-bottom: 5rem;
 }
 
 a {
-  color: black;
+  color: white;
   text-decoration: none;
 }
 
 a:hover {
-  color: #666;
+  transform: translateY(-3px);
+  /* box shadow parameters: x-direction, y-direction, blur, color */
+  box-shadow: 0 1rem 2rem rgba(black, 0.2);
 }
 
 ul {
@@ -59,6 +63,12 @@ img {
 
 .large {
   font-size: 3rem;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+}
+
+.small {
+  font-size: 0.5rem;
   line-height: 1.2;
   margin-bottom: 1rem;
 }
@@ -222,11 +232,24 @@ img {
   grid-gap: 1rem;
 }
 
+.grid-5 {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 1rem;
+}
+
+.grid-6 {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-gap: 1rem;
+}
+
 .btn {
   display: inline-block;
   background: var(--light-color);
   color: #333;
-  padding: 0.4rem 1.3rem;
+  padding: 0.2rem 1.1rem;
+  border-radius: 1rem;
   font-size: 1rem;
   border: none;
   cursor: pointer;
@@ -310,6 +333,10 @@ img {
 
 .btn:hover {
   opacity: 0.8;
+}
+
+.btn:active {
+  transform: translateY(-1px);
 }
 
 .bg-light,
@@ -426,8 +453,8 @@ footer p {
 }
 
 .big-logo {
-  height: 300px;
-  width: 450px;
+  height: 15rem;
+  width: 23rem;
 }
 
 /* p {
@@ -436,4 +463,8 @@ footer p {
 
 .color-pastel {
   color: var(--pastel-blue);
+}
+
+.color-tertiary {
+  color: #c4bdc7;
 }
