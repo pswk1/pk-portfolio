@@ -1,19 +1,25 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import logo from '../../assets/imgs/PK.png';
 
 const Navbar = () => {
   return (
     <nav className='navbar .bg-light-gray'>
       <h1>
-        <Link to='/'>
+        <NavLink to='/'>
           <img src={logo} alt='logo'></img>
-        </Link>
+        </NavLink>
       </h1>
       <ul>
-        <Link to='/about'>About</Link>
-        <Link to='/projects'>Projects</Link>
-        <Link to='/Contact'>Contact</Link>
+        <NavLink className='link-animation' to='/about'>
+          About
+        </NavLink>
+        <NavLink className='link-animation' to='/projects'>
+          Projects
+        </NavLink>
+        <NavLink className='link-animation' to='/Contact'>
+          Contact
+        </NavLink>
       </ul>
     </nav>
   );

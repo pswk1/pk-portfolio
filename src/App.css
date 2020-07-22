@@ -124,7 +124,7 @@ img {
 /* Cards */
 .card {
   padding: 1rem;
-  border: #ccc 1px dotted;
+  border: #ccc 3px dashed;
   margin: 0.7rem 0;
 }
 
@@ -336,6 +336,10 @@ img {
 }
 
 .btn:active {
+  transform: translateY(-1px);
+}
+
+.link-animation {
   transform: translateY(-1px);
 }
 
