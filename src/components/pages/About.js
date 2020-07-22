@@ -30,7 +30,7 @@ const About = () => {
         <div className='all-center profile-pic'></div>
       </div>
 
-      <div className='all-center my-top-3'>
+      <div className='all-center my-top-3 my-bot-2'>
         <h2 className='color-pastel'>Tools and Tech</h2>
         <p>
           Front End: HTML/CSS3, Javascript/jQuery, React.js, CSS Frameworks,

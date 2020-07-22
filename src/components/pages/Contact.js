@@ -31,7 +31,7 @@ const Contact = () => {
         </a>
 
         <a
-          className='btn my-top-1 my-bot-1'
+          className='btn-narrower my-top-1 my-bot-1'
           href='https://www.linkedin.com/in/peterswkang/'
           target='_blank'
           rel='noopener noreferrer'
@@ -40,7 +40,7 @@ const Contact = () => {
         </a>
 
         <a
-          className='btn'
+          className='btn-narrow my-bot-1'
           href={Resume}
           target='_blank'
           rel='noopener noreferrer'
