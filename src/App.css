@@ -6,7 +6,7 @@
   --light-color: #f4f4f4;
   --light-gray-color: #bdc3c7;
   --dark-gray-color: #2c3e50;
-  --pastel-blue: #829cad;
+  --pastel-blue: #587698;
   --color-tertiary: #c4bdc7;
 }
 
@@ -23,6 +23,10 @@ body {
   background-color: var(--light-gray-color);
   color: white;
   margin-bottom: 5rem;
+}
+
+h2 {
+  color: #587698;
 }
 
 a {
