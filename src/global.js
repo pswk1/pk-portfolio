@@ -1,3 +1,8 @@
+import { createGlobalStyle } from 'styled-components';
+import profilepic from './assets/imgs/profilepic.png';
+
+export const GlobalStyles = createGlobalStyle` 
+
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600&display=swap');
 
 /* Global Styles */
@@ -7,7 +12,6 @@
   --light-color: #f4f4f4;
   --light-gray-color: #bdc3c7;
   --dark-gray-color: #2c3e50;
-  --pastel-blue: #587698;
   --color-tertiary: #c4bdc7;
 }
 
@@ -22,15 +26,13 @@ body {
   font-family: 'Quicksand', serif;
   font-size: 1rem;
   line-height: 1.6;
-  /* background-color: var(--dark-blue); */
-  background-color: var(--light-color);
-  color: var(--dark-color);
-  /* color: var(--light-color); */
+  background-color: ${({ theme }) => theme.body};
+  color: ${({ theme }) => theme.text};
   margin-bottom: 5rem;
 }
 
 a {
-  color: white;
+  color: ${({ theme }) => theme.text};
   text-decoration: none;
 }
 
@@ -273,8 +275,7 @@ img {
 }
 
 .navbar a {
-  /* color: #fff; */
-  color: var(--dark-color);
+color: ${({ theme }) => theme.text}
   padding: 0.45rem;
   margin: 0 0.25rem;
 }
@@ -349,8 +350,7 @@ footer {
   left: 0;
   right: 0;
   bottom: 0;
-  /* background-color: #333333; */
-  background-color: var(--light-gray-color);
+  background-color: ${({ theme }) => theme.footer}
 }
 
 footer p {
@@ -365,7 +365,7 @@ footer p {
 }
 
 .profile-pic {
-  background-image: url(./assets/imgs/profilepic.png);
+background-image: url(${profilepic});
   background-position: center;
   background-size: cover;
   border-radius: 50%;
@@ -409,3 +409,5 @@ footer p {
     transform: translateY(0);
   }
 }
+
+`;
