@@ -1,13 +1,14 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import logo from '../../assets/imgs/PK.png';
+// import logo from '../../assets/imgs/PK.png';
+import logoLight from '../../assets/imgs/PK_Light_small.png';
 
 const Navbar = () => {
   return (
-    <nav className='navbar .bg-light-gray'>
+    <nav className='navbar'>
       <h1>
         <NavLink to='/'>
-          <img src={logo} alt='logo'></img>
+          <img src={logoLight} alt='logo'></img>
         </NavLink>
       </h1>
       <ul>

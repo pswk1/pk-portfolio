@@ -5,7 +5,8 @@ const About = () => {
     <div className='container my-bot-3'>
       <div className='grid-2'>
         <div>
-          <h1 className='color-pastel'>About Me</h1>
+          {/* <h1 className='color-pastel'>About Me</h1> */}
+          <h1>About Me</h1>
           <p className='my-bot-1'>
             A son to Korean immigrants, I grew up an Angeleno before I graduated
             from the University of California, Santa Barbara. I had plans to
@@ -31,7 +32,8 @@ const About = () => {
       </div>
 
       <div className='all-center my-top-3 my-bot-2'>
-        <h2 className='color-pastel'>Tools and Tech</h2>
+        {/* <h2 className='color-pastel'>Tools and Tech</h2> */}
+        <h2>Tools and Tech</h2>
         <p>
           Front End: HTML/CSS3, Javascript/jQuery, React.js, CSS Frameworks,
           Sass

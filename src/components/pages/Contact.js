@@ -4,7 +4,8 @@ import Resume from '../../assets/resume/PeterKang_PortResume.pdf';
 const Contact = () => {
   return (
     <div className='container my-bot-3'>
-      <h1 className='color-pastel all-center'>Contact</h1>
+      {/* <h1 className='color-pastel all-center'>Contact</h1> */}
+      <h1 className='all-center'>Contact</h1>
       <div className='all-center'>
         <p>
           I am available for full-time, part-time, or internship positions.
