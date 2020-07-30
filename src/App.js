@@ -1,7 +1,9 @@
 import React, { useState } from 'react';
+
 import { ThemeProvider } from 'styled-components';
 import { lightTheme, darkTheme } from './theme';
 import { GlobalStyles } from './global';
+
 import Navbar from './components/layout/Navbar';
 import Home from './components/pages/Home';
 import About from './components/pages/About';
@@ -10,7 +12,9 @@ import Contact from './components/pages/Contact';
 import Footer from './components/layout/Footer';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
-// import './App.css';
+import Toggle from './components/toggle/Toggle';
+
+import './App.css';
 
 function App() {
   const [theme, setTheme] = useState('light');
@@ -29,7 +33,7 @@ function App() {
       <Router>
         <div>
           <Navbar />
-          <button onClick={toggleTheme}>Toggle Light/Dark</button>
+          <Toggle theme={theme} toggleTheme={toggleTheme} />
           <div>
             <Switch>
               <Route exact path='/' component={Home}></Route>
