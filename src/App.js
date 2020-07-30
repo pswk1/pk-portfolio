@@ -36,8 +36,12 @@ function App() {
             <small className='mx-1'>Light Mode</small>
           ) : (
             <small className='mx-1'>Dark Mode</small>
-          )}
-          <Toggle theme={theme} toggleTheme={toggleTheme} /> */}
+          )} */}
+          <Toggle
+            className='all-center'
+            theme={theme}
+            toggleTheme={toggleTheme}
+          />
           <Navbar />
 
           <div>

@@ -202,6 +202,28 @@ img {
   grid-gap: 1rem;
 }
 
+button {
+  background: ${({ theme }) => theme.body};
+  color: ${({ theme }) => theme.text};
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0.1rem 1rem;
+  border-radius: 1rem;
+  font-size: 1rem;
+  font: inherit;
+  border: none;
+  cursor: pointer;
+  transition: opacity 0.2s ease-in;
+  // outline: none;
+}
+
+
+
 .btn {
   display: inline-block;
   /* background: var(--light-color); */
