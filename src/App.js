@@ -17,7 +17,7 @@ import Toggle from './components/toggle/Toggle';
 import './App.css';
 
 function App() {
-  const [theme, setTheme] = useState('light');
+  const [theme, setTheme] = useState('dark');
 
   const toggleTheme = () => {
     if (theme === 'light') {
@@ -32,8 +32,14 @@ function App() {
       <GlobalStyles />
       <Router>
         <div>
-          <Navbar />
+          {theme === 'light' ? (
+            <small className='mx-1'>Light Mode</small>
+          ) : (
+            <small className='mx-1'>Dark Mode</small>
+          )}
           <Toggle theme={theme} toggleTheme={toggleTheme} />
+          <Navbar />
+
           <div>
             <Switch>
               <Route exact path='/' component={Home}></Route>

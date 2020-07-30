@@ -28,7 +28,7 @@ body {
   line-height: 1.6;
   background-color: ${({ theme }) => theme.body};
   color: ${({ theme }) => theme.text};
-  margin-bottom: 5rem;
+  margin-bottom: 6rem;
   transition: all 0.5s linear;
 }
 
@@ -123,6 +123,10 @@ img {
 .py-1 {
   padding: 1rem 0;
 }
+
+.px-1 {
+  padding: 0 1rem;
+}
 .py-2 {
   padding: 2rem 0;
 }
@@ -143,6 +147,11 @@ img {
 .m-3 {
   margin: 3rem;
 }
+
+.mx-1 {
+  margin-left: 0.5rem
+}
+
 .my {
   margin: 0.5rem 0;
 }

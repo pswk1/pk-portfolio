@@ -5,7 +5,6 @@ import ProjectInfo from './ProjectInfo';
 const Projects = () => {
   return (
     <div className='container my-bot-3'>
-      {/* <h1 className='color-pastel'>Projects</h1> */}
       <h1>Projects</h1>
       <div className='grid-2'>
         {ProjectInfo.map((project) => (
