@@ -29,6 +29,7 @@ body {
   background-color: ${({ theme }) => theme.body};
   color: ${({ theme }) => theme.text};
   margin-bottom: 5rem;
+  transition: all 0.5s linear;
 }
 
 a {
@@ -275,7 +276,7 @@ img {
 }
 
 .navbar a {
-color: ${({ theme }) => theme.text}
+color: ${({ theme }) => theme.text};
   padding: 0.45rem;
   margin: 0 0.25rem;
 }

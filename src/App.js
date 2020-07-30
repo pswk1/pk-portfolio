@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { ThemeProvider } from 'styled-components';
 import { lightTheme, darkTheme } from './theme';
 import { GlobalStyles } from './global';
@@ -13,12 +13,23 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 // import './App.css';
 
 function App() {
+  const [theme, setTheme] = useState('light');
+
+  const toggleTheme = () => {
+    if (theme === 'light') {
+      setTheme('dark');
+    } else {
+      setTheme('light');
+    }
+  };
+
   return (
-    <ThemeProvider theme={darkTheme}>
+    <ThemeProvider theme={theme === 'light' ? lightTheme : darkTheme}>
       <GlobalStyles />
       <Router>
         <div>
           <Navbar />
+          <button onClick={toggleTheme}>Toggle Light/Dark</button>
           <div>
             <Switch>
               <Route exact path='/' component={Home}></Route>
