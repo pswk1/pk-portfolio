@@ -41,7 +41,7 @@ const Footer = () => {
       <p>
         Peter Kang | Web Developer | <span id='year'>{setYear()}</span>
       </p>
-      <small>
+      {/* <small>
         <b>Sun</b> icon made by{' '}
         <a href='https://www.flaticon.com/authors/smalllikeart'>smalllikeart</a>{' '}
         from <a href='https://www.flaticon.com'>www.flaticon.com</a>
@@ -51,7 +51,7 @@ const Footer = () => {
         <b>Moon</b> icon made by{' '}
         <a href='https://www.freepik.com/home'>Freepik</a> from{' '}
         <a href='https://www.flaticon.com'>www.flaticon.com</a>
-      </small>
+      </small> */}
     </footer>
   );
 };
