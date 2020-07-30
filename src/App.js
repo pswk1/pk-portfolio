@@ -32,12 +32,12 @@ function App() {
       <GlobalStyles />
       <Router>
         <div>
-          {theme === 'light' ? (
+          {/* {theme === 'light' ? (
             <small className='mx-1'>Light Mode</small>
           ) : (
             <small className='mx-1'>Dark Mode</small>
           )}
-          <Toggle theme={theme} toggleTheme={toggleTheme} />
+          <Toggle theme={theme} toggleTheme={toggleTheme} /> */}
           <Navbar />
 
           <div>
