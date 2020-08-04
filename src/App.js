@@ -18,8 +18,13 @@ import Toggle from './components/toggle/Toggle';
 import './App.css';
 
 function App() {
-  const [theme, setTheme] = useDarkMode();
+  const [theme, setTheme, componentMounted] = useDarkMode();
   const themeMode = theme === 'light' ? lightTheme : darkTheme;
+
+  // if component has not mounted yet (from useEffect in useDarMode) render an empty div
+  if (!componentMounted) {
+    return <div />;
+  }
 
   const toggleTheme = () => {
     if (theme === 'light') {
