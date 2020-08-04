@@ -20,13 +20,17 @@ export const useDarkMode = () => {
 
   useEffect(() => {
     const localTheme = window.localStorage.getItem('theme');
-    if (localTheme) {
-      setTheme(localTheme);
-
-      // if there is no theme in localStorage, set theme as dark
-    } else {
-      setMode('dark');
-    }
+    window.matchMedia &&
+    //  prefers-color-scheme is CSS media feature that checks if use OS has enabled a preferred light/dark theme
+    window.matchMedia('(prefers-color-scheme: dark)').matches &&
+    // if user OS has dark mode on their machine, and localTheme does not exist, set theme to dark.
+    !localTheme
+      ? setMode('dark')
+      : // else if, localTheme exists, set it to the existing localTheme
+      localTheme
+      ? setTheme(localTheme)
+      : // else set theme to light mode
+        setMode('light');
     setComponentMounted(true);
   }, []);
 
