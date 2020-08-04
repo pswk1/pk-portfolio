@@ -1,6 +1,7 @@
-import React, { useState } from 'react';
+import React from 'react';
 
 import { ThemeProvider } from 'styled-components';
+import { useDarkMode } from './useDarkMode';
 import { lightTheme, darkTheme } from './theme';
 import { GlobalStyles } from './global';
 
@@ -17,7 +18,8 @@ import Toggle from './components/toggle/Toggle';
 import './App.css';
 
 function App() {
-  const [theme, setTheme] = useState('dark');
+  const [theme, setTheme] = useDarkMode();
+  const themeMode = theme === 'light' ? lightTheme : darkTheme;
 
   const toggleTheme = () => {
     if (theme === 'light') {
@@ -28,15 +30,10 @@ function App() {
   };
 
   return (
-    <ThemeProvider theme={theme === 'light' ? lightTheme : darkTheme}>
+    <ThemeProvider theme={themeMode}>
       <GlobalStyles />
       <Router>
         <div>
-          {/* {theme === 'light' ? (
-            <small className='mx-1'>Light Mode</small>
-          ) : (
-            <small className='mx-1'>Dark Mode</small>
-          )} */}
           <Toggle
             className='all-center'
             theme={theme}

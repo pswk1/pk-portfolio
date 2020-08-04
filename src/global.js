@@ -313,7 +313,6 @@ color: ${({ theme }) => theme.text};
 }
 
 .navbar a:hover {
-  /* color: var(--light-color); */
   color: var(--light-gray-color);
 }
 
