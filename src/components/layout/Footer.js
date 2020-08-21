@@ -37,21 +37,34 @@ const Footer = () => {
             <i style={{ color: 'white' }} className='fa fa-linkedin-square' />
           )}
         </a>{' '}
+        <a
+          href='https://twitter.com/pswk11'
+          target='_blank'
+          rel='noopener noreferrer'
+          alt='twitter'
+        >
+          {themeContext === lightTheme ? (
+            <i style={{ color: 'black' }} className='fa fa-twitter' />
+          ) : (
+            <i style={{ color: 'white' }} className='fa fa-twitter' />
+          )}
+        </a>{' '}
+        <a
+          href='https://dev.to/pswk1'
+          target='_blank'
+          rel='noopener noreferrer'
+          alt='devto'
+        >
+          {themeContext === lightTheme ? (
+            <i style={{ color: 'black' }} className='fa fa-dev'></i>
+          ) : (
+            <i style={{ color: 'white' }} className='fa fa-dev'></i>
+          )}
+        </a>{' '}
       </div>
       <p>
-        Peter Kang | Web Developer | <span id='year'>{setYear()}</span>
+        Peter Kang | <span id='year'>{setYear()}</span>
       </p>
-      {/* <small>
-        <b>Sun</b> icon made by{' '}
-        <a href='https://www.flaticon.com/authors/smalllikeart'>smalllikeart</a>{' '}
-        from <a href='https://www.flaticon.com'>www.flaticon.com</a>
-      </small>{' '}
-      &nbsp;
-      <small>
-        <b>Moon</b> icon made by{' '}
-        <a href='https://www.freepik.com/home'>Freepik</a> from{' '}
-        <a href='https://www.flaticon.com'>www.flaticon.com</a>
-      </small> */}
     </footer>
   );
 };

@@ -23,6 +23,15 @@ const Contact = () => {
         </a>
 
         <a
+          className='btn-narrow my-top-1'
+          href={Resume}
+          target='_blank'
+          rel='noopener noreferrer'
+        >
+          Resume
+        </a>
+
+        <a
           className='btn my-top-1'
           href='https://github.com/pswk1'
           target='_blank'
@@ -32,7 +41,7 @@ const Contact = () => {
         </a>
 
         <a
-          className='btn-narrower my-top-1 my-bot-1'
+          className='btn-narrower my-top-1'
           href='https://www.linkedin.com/in/peterswkang/'
           target='_blank'
           rel='noopener noreferrer'
@@ -41,12 +50,21 @@ const Contact = () => {
         </a>
 
         <a
-          className='btn-narrow my-bot-1'
-          href={Resume}
+          className='btn my-top-1'
+          href='https://twitter.com/pswk11'
           target='_blank'
           rel='noopener noreferrer'
         >
-          Resume
+          Twitter
+        </a>
+
+        <a
+          className='btn my-top-1 my-bot-1'
+          href='https://dev.to/pswk1'
+          target='_blank'
+          rel='noopener noreferrer'
+        >
+          Blog
         </a>
       </div>
     </div>
