@@ -10,6 +10,7 @@ import Home from './components/pages/Home';
 import About from './components/pages/About';
 import Projects from './components/projects/Projects';
 import Contact from './components/pages/Contact';
+import Blog from './components/blog/Blog';
 import Footer from './components/layout/Footer';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
@@ -51,6 +52,7 @@ function App() {
               <Route exact path='/' component={Home}></Route>
               <Route exact path='/about' component={About} />
               <Route exact path='/projects' component={Projects} />
+              <Route exact path='/blog' component={Blog} />
               <Route exact path='/contact' component={Contact} />
             </Switch>
           </div>
