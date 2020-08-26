@@ -1,9 +1,7 @@
 import React from 'react';
 
 const BlogCard = (props) => {
-  console.log(props);
   const { title, description, social_image, canonical_url } = props.data;
-  console.log(title);
 
   return (
     <div className='card'>
