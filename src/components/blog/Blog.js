@@ -24,10 +24,11 @@ const Blog = () => {
     // eslint-disable-next-line
   }, []);
 
-  if (loading) return <p>Loading...</p>;
+  if (loading) return <p className='all-center'>Loading...</p>;
 
   return (
     <div className='container my-bot-3'>
+      <h1>Blog</h1>
       <div className='grid-2'>
         {posts.map((post) => (
           <BlogCard key={post.id} data={post} />
