@@ -441,20 +441,24 @@ background-image: url(${profilepic});
   }
 }
 
-@media (max-width: 700px) {
+@media all and (max-width: 600px) {
+  nav ul {
+    flex-direction: column;
+    flex-flow: column wrap;
+  }
+  nav ul li {
+    text-align: center;
+  }
+
   .center-logo {
     width: 100%;
     margin: auto;
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -30%);
+    transform: translate(-50%, -10%);
     text-align: center;
   }
-}
-
-@media (max-width: 380px) {
-
 }
 
 `;
