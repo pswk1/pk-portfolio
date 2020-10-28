@@ -442,6 +442,7 @@ background-image: url(${profilepic});
 }
 
 @media all and (max-width: 600px) {
+
   nav ul {
     flex-direction: column;
     flex-flow: column wrap;

@@ -1,5 +1,5 @@
 import React from 'react';
-import Resume from '../../assets/resume/PeterKang_PortResume.pdf';
+import Resume from '../../assets/resume/Peter_Kang_Resume.pdf';
 
 const Contact = () => {
   return (
