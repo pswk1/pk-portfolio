@@ -23,7 +23,7 @@ const ProjectCard = (props) => {
         target='_blank'
         rel='noopener noreferrer'
       >
-        Deploy
+        Project
       </a>
     </div>
   );
